@@ -55,7 +55,7 @@ impl<T> LinkedList<T> {
         self.end = node_ptr;
         self.length += 1;
     }
-
+    
     pub fn get(&mut self, index: i32) -> Option<&T> {
         self.get_ith_node(self.start, index)
     }
